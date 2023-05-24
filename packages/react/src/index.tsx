@@ -1,12 +1,29 @@
 import { styled } from './styles'
 
-const Button = styled('button', {
+import { ComponentProps } from 'react'
+
+export const Button = styled('button', {
   fontFamily: '$default',
   backgroundColor: '$ignite500',
   borderRadius: '$md',
-  padding: '$4',
-})
+  border: 'none',
+  fontWeight: 'bold',
+  color: '$white',
 
-export function App() {
-  return <Button>adicionar</Button>
-}
+  variants: {
+    size: {
+      small: {
+        fontSize: 14,
+        padding: '$2 $4',
+      },
+      big: {
+        fontSize: 14,
+        padding: '$3 $6',
+      },
+    },
+  },
+  defaultVariants: {
+    size: 'small',
+  },
+})
+export type ButtonProps = ComponentProps<typeof Button>
