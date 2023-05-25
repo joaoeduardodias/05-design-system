@@ -2,9 +2,9 @@
   "name": "@ignite-ui/react",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+"module": "./dist/index.mjs",
+"types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react ",
     "dev": "tsup src/index.tsx --format esm,cjs --dts --external react  --watch ",
@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.0.2",
-    "@radix-ui/react-checkbox": "^1.0.2",
+    "@radix-ui/react-checkbox": "^1.0.3",
     "@stitches/react": "^1.2.8",
     "phosphor-react": "^1.4.1"
   }
